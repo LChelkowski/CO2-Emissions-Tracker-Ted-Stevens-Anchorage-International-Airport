@@ -177,59 +177,27 @@ def increase_rows(event):
 
 increase_rows_button.on_click(increase_rows)
 
-# Export data to CSV and Excel
-def export_to_csv(event):
-    file_path = file_path_input.value
-    if file_path and combined_df_all is not None:
-        if not file_path.endswith('.csv'):
-            file_path += '.csv'
-        combined_df_all.to_csv(file_path, index=False)
-        export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}</div>"
-    else:
-        export_message.object = "<div style='text-align:center;'>Please enter a file path and ensure data is loaded.</div>"
-
-def export_to_excel(event):
-    file_path = file_path_input.value
-    if file_path and combined_df_all is not None:
-        if not file_path.endswith('.xlsx'):
-            file_path += '.xlsx'
-        combined_df_all.to_excel(file_path, index=False)
-        export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}</div>"
-    else:
-        export_message.object = "<div style='text-align:center;'>Please enter a file path and ensure data is loaded.</div>"
-
-export_csv_button = pn.widgets.Button(name='Export to CSV', button_type='success')
-export_csv_button.on_click(export_to_csv)
-
-export_excel_button = pn.widgets.Button(name='Export to Excel', button_type='success')
-export_excel_button.on_click(export_to_excel)
-
-export_message = pn.pane.Markdown("", width=400)
-
 def update_data(event=None):
     global combined_df_all, current_rows_display
-    logger.info("update_data function called")
-    logger.info(f"Current rows display: {current_rows_display}")
     start_date = start_date_picker.value
     end_date = end_date_picker.value
     saf_percentage = saf_slider.value
-    logger.info(f"Start date: {start_date}, End date: {end_date}, SAF percentage: {saf_percentage}")
     row_limit = current_rows_display
-
+    
     date_range_list = pd.date_range(start_date, end_date).strftime("%Y-%m-%d").tolist()
-    logger.info(f"Date range list: {date_range_list}")
-
+    
     # Load and process all data within the date range for calculations
     combined_df_all = load_pickle_files_dask(date_range_list)
+    
     if combined_df_all is not None:
         combined_df_all = combined_df_all.compute()
         combined_df_all = calculate_saf_reduction(combined_df_all, saf_percentage)
-
+        
         # Calculate totals for the entire dataset
         total_co2_emission = combined_df_all['CO2 Emission (metric tons)'].sum()
         total_saf_reduction = combined_df_all['Reduced CO2 Emission (metric tons)'].sum()
         median_co2 = combined_df_all['CO2 Emission (metric tons)'].median()
-
+        
         top_origins = combined_df_all['Origin'].value_counts().nlargest(3).index.tolist()
         top_destinations = combined_df_all['Destination'].value_counts().nlargest(3).index.tolist()
         top_airlines = combined_df_all['Airline'].value_counts().nlargest(5)
@@ -239,7 +207,7 @@ def update_data(event=None):
         if display_df is not None:
             display_df = display_df.compute()
             display_df = calculate_saf_reduction(display_df, saf_percentage)
-
+        
         update_panel.objects = [
             pn.Row(
                 pn.pane.HTML(f"<div style='background-color: #3e3e3e; color: #e0e0e0; padding: 10px; border-radius: 5px; width: 100%;'>Total CO2 Emissions: {total_co2_emission:,.2f} metric tons</div>"),
@@ -262,7 +230,8 @@ def update_data(event=None):
                     + "</div>"
                 )
             ),
-            pn.Row(export_csv_button, export_message, export_excel_button),
+            # Remove the following line
+            # pn.Row(export_csv_button, export_message, export_excel_button),
             pn.pane.DataFrame(display_df, sizing_mode='stretch_both')
         ]
 
@@ -276,7 +245,6 @@ def update_data(event=None):
         increase_rows_button.disabled = True
     else:
         increase_rows_button.disabled = False
-
 
 
 # Watch changes on date pickers and SAF slider
