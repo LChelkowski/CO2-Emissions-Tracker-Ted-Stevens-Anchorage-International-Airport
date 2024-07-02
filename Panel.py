@@ -2,8 +2,20 @@ import panel as pn
 import pandas as pd
 import pickle
 import os
+import requests 
 import dask.dataframe as dd
 from datetime import datetime
+
+def download_file_from_github(repo, path, save_as):
+    url = f"https://github.com/LChelkowski/CO2-Emissions-Tracker-Ted-Stevens-Anchorage-International-Airport/tree/master/data"
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(save_as, 'wb') as f:
+            f.write(response.content)
+        print(f"Downloaded {save_as} from GitHub")
+    else:
+        print(f"Failed to download {path} from GitHub: {response.status_code}")
+
 
 # Initialize Panel extension
 pn.extension(sizing_mode="stretch_width", theme="dark")
@@ -92,8 +104,12 @@ data_directory = 'C:/Users/lache/Desktop/Cornell/2024 Summer Internship/SAFs at 
 def load_pickle_files_dask(date_range_list, row_limit=None):
     df_list = []
     total_rows = 0
+    repo = "https://github.com/LChelkowski/CO2-Emissions-Tracker-Ted-Stevens-Anchorage-International-Airport"
     for date in date_range_list:
         combined_file = os.path.join(data_directory, f"{date}", f"{date}_combined.pkl")
+        if not os.path.exists(combined_file):
+            # Download the file from GitHub if it doesn't exist
+            download_file_from_github(repo, f"data/{date}/{date}_combined.pkl", combined_file)
         if os.path.exists(combined_file):
             with open(combined_file, 'rb') as f:
                 df = pickle.load(f)
@@ -111,6 +127,7 @@ def load_pickle_files_dask(date_range_list, row_limit=None):
         return dd.from_pandas(combined_df, npartitions=4)  # Convert to Dask DataFrame
     else:
         return None
+
 
 # CO2 emission reduction based on SAF percentage
 def calculate_saf_reduction(df, saf_percentage):
@@ -244,6 +261,7 @@ def update_data(event=None):
         increase_rows_button.disabled = True
     else:
         increase_rows_button.disabled = False
+
 
 # Watch changes on date pickers and SAF slider
 start_date_picker.param.watch(update_data, 'value')
