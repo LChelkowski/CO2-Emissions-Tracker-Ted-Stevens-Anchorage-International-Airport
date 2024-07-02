@@ -150,8 +150,8 @@ current_rows_display = 10000
 combined_df_all = None
 
 # Widgets
-start_date_picker = pn.widgets.DatePicker(name='Start date', value=datetime(2023, 1, 1))
-end_date_picker = pn.widgets.DatePicker(name='End date', value=datetime(2023, 12, 31))
+start_date_picker = pn.widgets.DatePicker(name='Start date', value=datetime(2023, 1, 1), start=datetime(2018, 1, 1))
+end_date_picker = pn.widgets.DatePicker(name='End date', value=datetime(2023, 12, 31), start=datetime(2018, 1, 1))
 saf_slider = pn.widgets.IntSlider(name='Select SAF percentage', start=0, end=100, value=20)
 saf_input = pn.widgets.IntInput(name='SAF percentage', value=20, start=0, end=100)
 file_path_input = pn.widgets.TextInput(name='File path', placeholder='Enter file path and name...')
@@ -181,18 +181,23 @@ increase_rows_button.on_click(increase_rows)
 def export_to_csv(event):
     file_path = file_path_input.value
     if file_path and combined_df_all is not None:
-        combined_df_all.to_csv(file_path + '.csv')
-        export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}.csv</div>"
+        if not file_path.endswith('.csv'):
+            file_path += '.csv'
+        combined_df_all.to_csv(file_path, index=False)
+        export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}</div>"
     else:
-        export_message.object = "<div style='text-align:center;'>Please enter a file path.</div>"
+        export_message.object = "<div style='text-align:center;'>Please enter a file path and ensure data is loaded.</div>"
 
 def export_to_excel(event):
     file_path = file_path_input.value
     if file_path and combined_df_all is not None:
-        combined_df_all.to_excel(file_path + '.xlsx')
-        export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}.xlsx</div>"
+        if not file_path.endswith('.xlsx'):
+            file_path += '.xlsx'
+        combined_df_all.to_excel(file_path, index=False)
+        export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}</div>"
     else:
-        export_message.object = "<div style='text-align:center;'>Please enter a file path.</div>"
+        export_message.object = "<div style='text-align:center;'>Please enter a file path and ensure data is loaded.</div>"
+
 
 export_csv_button = pn.widgets.Button(name='Export to CSV', button_type='success')
 export_csv_button.on_click(export_to_csv)
