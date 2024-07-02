@@ -5,6 +5,11 @@ import os
 import requests 
 import dask.dataframe as dd
 from datetime import datetime
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
 
 def download_file_from_github(repo, path, save_as):
     url = f"https://github.com/LChelkowski/CO2-Emissions-Tracker-Ted-Stevens-Anchorage-International-Airport/tree/master/data"
@@ -132,7 +137,6 @@ def load_pickle_files_dask(date_range_list, row_limit=None):
         return None
 
 
-
 # CO2 emission reduction based on SAF percentage
 def calculate_saf_reduction(df, saf_percentage):
     reduction_factor = saf_percentage / 100
@@ -200,25 +204,28 @@ export_message = pn.pane.Markdown("", width=400)
 
 def update_data(event=None):
     global combined_df_all, current_rows_display
+    logger.info("update_data function called")
+    logger.info(f"Current rows display: {current_rows_display}")
     start_date = start_date_picker.value
     end_date = end_date_picker.value
     saf_percentage = saf_slider.value
+    logger.info(f"Start date: {start_date}, End date: {end_date}, SAF percentage: {saf_percentage}")
     row_limit = current_rows_display
-    
+
     date_range_list = pd.date_range(start_date, end_date).strftime("%Y-%m-%d").tolist()
-    
+    logger.info(f"Date range list: {date_range_list}")
+
     # Load and process all data within the date range for calculations
     combined_df_all = load_pickle_files_dask(date_range_list)
-    
     if combined_df_all is not None:
         combined_df_all = combined_df_all.compute()
         combined_df_all = calculate_saf_reduction(combined_df_all, saf_percentage)
-        
+
         # Calculate totals for the entire dataset
         total_co2_emission = combined_df_all['CO2 Emission (metric tons)'].sum()
         total_saf_reduction = combined_df_all['Reduced CO2 Emission (metric tons)'].sum()
         median_co2 = combined_df_all['CO2 Emission (metric tons)'].median()
-        
+
         top_origins = combined_df_all['Origin'].value_counts().nlargest(3).index.tolist()
         top_destinations = combined_df_all['Destination'].value_counts().nlargest(3).index.tolist()
         top_airlines = combined_df_all['Airline'].value_counts().nlargest(5)
@@ -228,7 +235,7 @@ def update_data(event=None):
         if display_df is not None:
             display_df = display_df.compute()
             display_df = calculate_saf_reduction(display_df, saf_percentage)
-        
+
         update_panel.objects = [
             pn.Row(
                 pn.pane.HTML(f"<div style='background-color: #3e3e3e; color: #e0e0e0; padding: 10px; border-radius: 5px; width: 100%;'>Total CO2 Emissions: {total_co2_emission:,.2f} metric tons</div>"),
@@ -267,10 +274,12 @@ def update_data(event=None):
         increase_rows_button.disabled = False
 
 
+
 # Watch changes on date pickers and SAF slider
 start_date_picker.param.watch(update_data, 'value')
 end_date_picker.param.watch(update_data, 'value')
 saf_slider.param.watch(update_data, 'value')
+
 
 # Layout
 header = pn.pane.HTML("<h2 style='color: #4caf50; text-align: center;'>Anchorage Airport: Sustainable Aviation Fuel (SAF) CO2 Reduction Calculator</h2>")
