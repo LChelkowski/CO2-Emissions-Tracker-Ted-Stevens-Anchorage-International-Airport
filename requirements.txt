@@ -1,0 +1,10 @@
+panel
+pandas
+pickle5
+dask[dataframe]
+requests
+beautifulsoup4
+airportsdata
+numpy
+selenium
+webdriver-manager
