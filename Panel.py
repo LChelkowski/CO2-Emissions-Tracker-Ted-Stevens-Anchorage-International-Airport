@@ -4,7 +4,7 @@ import pickle
 import os
 import requests 
 import dask.dataframe as dd
-from datetime import datetime
+from datetime import date
 import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -150,8 +150,8 @@ current_rows_display = 10000
 combined_df_all = None
 
 # Widgets
-start_date_picker = pn.widgets.DatePicker(name='Start date', value=datetime(2023, 1, 1), start=datetime(2018, 1, 1))
-end_date_picker = pn.widgets.DatePicker(name='End date', value=datetime(2023, 12, 31), start=datetime(2018, 1, 1))
+start_date_picker = pn.widgets.DatePicker(name='Start date', value=date(2023, 1, 1), start=date(2018, 1, 1))
+end_date_picker = pn.widgets.DatePicker(name='End date', value=date(2023, 12, 31), start=date(2018, 1, 1))
 saf_slider = pn.widgets.IntSlider(name='Select SAF percentage', start=0, end=100, value=20)
 saf_input = pn.widgets.IntInput(name='SAF percentage', value=20, start=0, end=100)
 file_path_input = pn.widgets.TextInput(name='File path', placeholder='Enter file path and name...')
@@ -197,7 +197,6 @@ def export_to_excel(event):
         export_message.object = f"<div style='text-align:center;'>Data exported to {file_path}</div>"
     else:
         export_message.object = "<div style='text-align:center;'>Please enter a file path and ensure data is loaded.</div>"
-
 
 export_csv_button = pn.widgets.Button(name='Export to CSV', button_type='success')
 export_csv_button.on_click(export_to_csv)
