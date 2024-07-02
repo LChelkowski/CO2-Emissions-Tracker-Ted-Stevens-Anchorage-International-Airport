@@ -1,0 +1,46 @@
+body {
+    background-color: #2e2e2e; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bk-root .bk-btn, .bk-root .bk-slider, .bk-root .bk-input {
+    background-color: #4caf50; /* Light green */
+    color: #ffffff;
+    border-color: #4caf50;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.bk-root .bk-btn:hover, .bk-root .bk-slider:hover, .bk-root .bk-input:hover {
+    background-color: #388e3c; /* Darker green */
+    border-color: #388e3c;
+}
+
+.bk-root .bk-panel, .bk-root .bk-markdown {
+    background-color: #3e3e3e; /* Darker panel background */
+    color: #e0e0e0; /* Light text color */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bk-root .bk-dataframe {
+    background-color: #3e3e3e; /* Uniform dataframe background */
+    color: #e0e0e0; /* Light text color */
+    border-color: #1b5e20; /* Dark green border */
+    border-radius: 5px;
+    width: 100% !important; /* Ensure full width */
+}
+
+/* Ensure uniform background for DataFrame rows */
+.bk-root .bk-dataframe .slick-row {
+    background-color: #3e3e3e !important; /* Uniform row background */
+    color: #e0e0e0 !important; /* Light text color */
+}
+
+.bk-root .bk-slider-title, .bk-root .bk-input-title {
+    color: #e0e0e0; /* Light text color */
+    font-weight: bold;
+}

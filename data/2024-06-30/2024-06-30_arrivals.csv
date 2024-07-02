@@ -1,0 +1,43 @@
+Date & Status,Primary Flight Number,Flight Number,Airline,Origin,Status,Aircraft Info,CO2 Emission (kg)
+"30 Jun 00:09
+AKDT",AS193,ASA193,Alaska Airlines,Los Angeles (LAX / KLAX),On Time,Boeing 737-9,75508
+"30 Jun 00:35
+AKDT",DL411,DAL411,Delta Air Lines,Minneapolis (MSP / KMSP),On Time,Boeing 737-932ER,63989
+"30 Jun 00:45
+AKDT",5Y7589,,Atlas Air,Shanghai (PVG / ZSPD),On Time,Unknown,0
+"30 Jun 01:00
+AKDT",CK227,CKK227,China Cargo Airlines,Shanghai (PVG / ZSPD),On Time,Boeing 777-F,68168
+"30 Jun 01:10
+AKDT",5Y8935,GTI8935,Atlas Air,Miami (MIA / KMIA),Landed,B748,102291
+"30 Jun 02:00
+AKDT",5Y8523,,Atlas Air,Hong Kong (HKG / VHHH),On Time,Boeing 747-46NF,58869
+"30 Jun 02:25
+AKDT",AS101,ASA101,Alaska Airlines,Seattle (SEA / KSEA),On Time,Boeing 737-790,59494
+"30 Jun 02:32
+AKDT",AS7095,ASA7095,Alaska Airlines,Seattle (SEA / KSEA),On Time,Boeing 737-790SF,59494
+"30 Jun 03:05
+AKDT",PO962,PAC962,Polar Air Cargo,Tokyo (NRT / RJAA),On Time,Boeing 747-400,56026
+"30 Jun 03:15
+AKDT",KZ132,NCA132,Nippon Cargo Airlines,Tokyo (NRT / RJAA),Delayed,Boeing 747-8,63256
+"30 Jun 03:15
+AKDT",PO946,PAC946,Polar Air Cargo,Hong Kong (HKG / VHHH),On Time,Boeing 747-400,54748
+"30 Jun 04:35
+AKDT",PO7680,PAC7680,Polar Air Cargo,Hong Kong (HKG / VHHH),On Time,Boeing 747-400,54748
+"30 Jun 05:55
+AKDT",CX3194,CPA3194,Cathay Pacific,Hong Kong (HKG / VHHH),On Time,Boeing 747-8,61813
+"30 Jun 07:30
+AKDT",CI5148,CAL5148,China Airlines,Osaka (KIX / RJBB),Delayed,Boeing 747-400,54612
+"30 Jun 07:56
+AKDT",AS196,ASA196,Alaska Airlines,Kodiak (ADQ / PADQ),Delayed,Boeing 737-890,48545
+"30 Jun 10:20
+AKDT",OZ2521,AAR2521,Asiana Airlines,Seoul (ICN / RKSI),On Time,Unknown,0
+"30 Jun 11:00
+AKDT",OZ2821,AAR2821,Asiana Airlines,Seoul (ICN / RKSI),Delayed,Unknown,0
+"30 Jun 11:20
+AKDT",SQ7984,SQC7984,Singapore Airlines,Hong Kong (HKG / VHHH),On Time,Boeing 747-400,54748
+"30 Jun 11:55
+AKDT",KZ7168,NCA7168,Nippon Cargo Airlines,Tokyo (NRT / RJAA),Delayed,Unknown,0
+"30 Jun 12:30
+AKDT",OZ587,AAR587,Asiana Airlines,Seoul (ICN / RKSI),On Time,Boeing 747-48EF,51296
+"30 Jun 14:15
+AKDT",CX2088,CPA2088,Cathay Pacific,Hong Kong (HKG / VHHH),Delayed,Boeing 747-400,54748

@@ -1,0 +1,223 @@
+Date & Status,Primary Flight Number,Flight Number,Airline,Origin,Status,Aircraft Info,CO2 Emission (kg)
+"01 Jan 00:39
+AKST",AS193,ASA193,Alaska Airlines,Los Angeles (LAX / KLAX),Landed,Boeing 737-9,75508
+"01 Jan 00:50
+AKST",BR622,EVA622,EVA Airways,Taipei (TPE / RCTP),Landed,Boeing 777-F,74909
+"01 Jan 02:40
+AKST",AS7095,ASA7095,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-790SF,59494
+"01 Jan 03:05
+AKST",OZ2911,AAR2911,Asiana Airlines,Chicago (ORD / KORD),Landed,Boeing 747-48ESF,82098
+"01 Jan 03:21
+AKST",CI5256,CAL5256,China Airlines,Taipei (TPE / RCTP),Landed,Boeing 747-400,55732
+"01 Jan 03:49
+AKST",5Y8066,GTI8066,Atlas Air,Shanghai (PVG / ZSPD),Landed,Boeing 747-46NF,54534
+"01 Jan 03:50
+AKST",N8691,NCR691,National Airlines,Chicago (ORD / KORD),Landed,Boeing 747-412SF,82098
+"01 Jan 04:34
+AKST",5Y8052,GTI8052,Atlas Air,Hong Kong (HKG / VHHH),Landed,Boeing 747-87UF,58869
+"01 Jan 05:06
+AKST",K4802,CKS802,Kalitta Air,Cincinnati (CVG / KCVG),Landed,Boeing 747-4B5,84498
+"01 Jan 05:21
+AKST",5X102,UPS102,United Parcel Service (UPS),Louisville (SDF / KSDF),Landed,Boeing 767-34AERF,77120
+"01 Jan 05:48
+AKST",5X108,UPS108,United Parcel Service (UPS),Louisville (SDF / KSDF),Landed,Boeing 747-44AF,85688
+"01 Jan 05:52
+AKST",CC613,ABD613,Air Atlanta Icelandic,Seoul (ICN / RKSI),Landed,Boeing 747-409F,51296
+"01 Jan 06:15
+AKST",5X64,UPS64,United Parcel Service (UPS),Louisville (SDF / KSDF),Landed,Boeing 747-8F,89973
+"01 Jan 06:30
+AKST",CI5322,CAL5322,China Airlines,Taipei (TPE / RCTP),Landed,Boeing 777-F,74909
+"01 Jan 06:30
+AKST",FX169,FDX169A,Federal Express (FedEx),Oakland (OAK / KOAK),Landed,Boeing 777-F,112676
+"01 Jan 06:42
+AKST",5X62,UPS62,United Parcel Service (UPS),Louisville (SDF / KSDF),Landed,Boeing 747-428F,89973
+"01 Jan 06:51
+AKST",FX31,FDX31,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,Boeing 777-F,112517
+"01 Jan 06:58
+AKST",FX20,FDX20,Federal Express (FedEx),Oakland (OAK / KOAK),Landed,McDonnell Douglas MD-11F,99155
+"01 Jan 06:59
+AKST",AS869,ASA869,Alaska Airlines,Kahului (OGG / PHOG),Landed,Boeing 737-9,82321
+"01 Jan 07:05
+AKST",AS871,ASA871,Alaska Airlines,Honolulu (HNL / PHNL),Landed,Boeing 737-890,76495
+"01 Jan 07:19
+AKST",FX81,FDX81,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,McDonnell Douglas MD-11F,99015
+"01 Jan 07:34
+AKST",5X104,UPS104,United Parcel Service (UPS),Louisville (SDF / KSDF),Landed,Boeing 767-34AERF,77120
+"01 Jan 07:56
+AKST",AS48,ASA48,Alaska Airlines,Kodiak (ADQ / PADQ),Landed,Boeing 737-900ER,50487
+"01 Jan 08:06
+AKST",AS2011,QXE2011,Alaska Airlines,Fairbanks (FAI / PAFA),Landed,Embraer 170-200LR-175LR,31902
+"01 Jan 08:21
+AKST",FX5132,FDX5132,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,McDonnell Douglas MD-11F,99015
+"01 Jan 08:25
+AKST",FX157,FDX157,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,Boeing 777-FS2,112517
+"01 Jan 08:50
+AKST",FX23,FDX23,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,Boeing 777-FS2,112517
+"01 Jan 09:05
+AKST",AS197,ASA197,Alaska Airlines,Portland (PDX / KPDX),Landed,Boeing 737-890,61041
+"01 Jan 09:19
+AKST",AS73,ASA73,Alaska Airlines,Juneau (JNU / PAJN),Landed,Boeing 737-890,49907
+"01 Jan 09:35
+AKST",SQ7980,SQC7980,Singapore Airlines,Hong Kong (HKG / VHHH),Landed,Boeing 747-412F,58869
+"01 Jan 09:50
+AKST",AS83,ASA83,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-890,59494
+"01 Jan 10:24
+AKST",5X109,UPS109,United Parcel Service (UPS),Tokyo (NRT / RJAA),Landed,Boeing 747-8F,63256
+"01 Jan 10:59
+AKST",AS139,ASA139,Alaska Airlines,Chicago (ORD / KORD),Landed,Boeing 737-900WL,64036
+"01 Jan 11:02
+AKST",FX5391,FDX5391,Federal Express (FedEx),Tokyo (NRT / RJAA),Landed,Boeing 777-FS2,75304
+"01 Jan 11:03
+AKST",PO989,PAC989,Polar Air Cargo,Cincinnati (CVG / KCVG),Landed,Boeing 747-400,78583
+"01 Jan 11:40
+AKST",AS2027,QXE2027,Alaska Airlines,Fairbanks (FAI / PAFA),Landed,Embraer 170-200LR-175LR,31902
+"01 Jan 11:50
+AKST",CI5321,CAL5321,China Airlines,New York (JFK / KJFK),Landed,Boeing 747-400,74263
+"01 Jan 11:50
+AKST",AS87,ASA87,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-700,57115
+"01 Jan 12:05
+AKST",FX14,FDX14,Federal Express (FedEx),Taipei (TPE / RCTP),Landed,MD11,71912
+"01 Jan 12:20
+AKST",AS1203,ASA1203,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-890,59494
+"01 Jan 12:26
+AKST",FX5928,FDX5928,Federal Express (FedEx),Seoul (ICN / RKSI),Landed,Boeing 777-F,64120
+"01 Jan 12:50
+AKST",AS101,ASA101,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-790,59494
+"01 Jan 13:00
+AKST",O37001,CSS7001,SF Airlines (ShunFeng Airlines),Shenzhen (SZX / ZGSZ),Landed,Boeing 757-236SF,46797
+"01 Jan 13:10
+AKST",KE257,KAL257,Korean Air Lines,Seoul (ICN / RKSI),Landed,Boeing 777-FB5,64120
+"01 Jan 13:22
+AKST",5Y8791,GTI8791,Atlas Air,New York (JFK / KJFK),Landed,Boeing 747-46NF,79853
+"01 Jan 13:23
+AKST",FX5282,FDX5282,Federal Express (FedEx),Shanghai (PVG / ZSPD),Landed,Boeing 777-FS2,68168
+"01 Jan 13:25
+AKST",AS2148,QXE2148,Alaska Airlines,Fairbanks (FAI / PAFA),Landed,Embraer 170-200LR-175LR,31902
+"01 Jan 13:48
+AKST",N8659,NCR659,National Airlines,Chicago (ORD / KORD),Landed,Boeing 747-428SF,82098
+"01 Jan 14:01
+AKST",AS44,ASA44,Alaska Airlines,Bethel (BET / PABE),Landed,Boeing 737-890,44756
+"01 Jan 14:01
+AKST",K4828,CKS828,Kalitta Air,Los Angeles (LAX / KLAX),Landed,Boeing 747-4H6F,94385
+"01 Jan 14:10
+AKST",AS95,ASA95,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-900ER,61874
+"01 Jan 14:17
+AKST",5Y8144,GTI8144,Atlas Air,Hong Kong (HKG / VHHH),Landed,Boeing 747-45EF,58869
+"01 Jan 14:20
+AKST",KE283,KAL283,Korean Air Lines,Seoul (ICN / RKSI),Landed,Boeing 747-8B5F,53861
+"01 Jan 14:25
+AKST",KE255,KAL255,Korean Air Lines,Seoul (ICN / RKSI),Landed,Boeing 747-8HTF,53861
+"01 Jan 14:25
+AKST",AS154,ASA154,Alaska Airlines,Kotzebue (OTZ / PAOT),Landed,Boeing 737-990ER,42703
+"01 Jan 14:25
+AKST",K4656,CKS656,Kalitta Air,Seoul (ICN / RKSI),Landed,Boeing 747-4B5SF,51296
+"01 Jan 14:30
+AKST",KE273,KAL273,Korean Air Lines,Seoul (ICN / RKSI),Landed,Boeing 777-FB5,64120
+"01 Jan 14:39
+AKST",DL2471,DAL2471,Delta Air Lines,Seattle (SEA / KSEA),Landed,Boeing 737-9GPER,63461
+"01 Jan 14:44
+AKST",K49209,CKS9209,Kalitta Air,Los Angeles (LAX / KLAX),Landed,Boeing 747-4H6SF,94385
+"01 Jan 14:53
+AKST",AS93,ASA93,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-9,63461
+"01 Jan 15:07
+AKST",K4871,CKS871,Kalitta Air,Seoul (ICN / RKSI),Landed,Boeing 747-4B5F,51296
+"01 Jan 15:15
+AKST",CX87,CPA87,Cathay Pacific,Guadalajara (GDL / MMGL),Landed,Boeing 747-867F,113664
+"01 Jan 15:35
+AKST",CX3281,CPA3281,Cathay Pacific,Portland (PDX / KPDX),Landed,Boeing 747-8,85457
+"01 Jan 15:41
+AKST",CI5283,CAL5283,China Airlines,Chicago (ORD / KORD),Landed,Boeing 777-F,102622
+"01 Jan 15:42
+AKST",SV613,ABD613,Air Atlanta Icelandic,Seoul (ICN / RKSI),Landed,Unknown,0
+"01 Jan 15:43
+AKST",AS97,ASA97,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-990ER,63461
+"01 Jan 16:29
+AKST",5Y2688,GTI2688,Atlas Air,Seoul (ICN / RKSI),Landed,Boeing 747-47UF,51296
+"01 Jan 16:45
+AKST",AS183,ASA183,Alaska Airlines,Fairbanks (FAI / PAFA),Landed,Boeing 737-890,43502
+"01 Jan 16:55
+AKST",BR667,EVA667,EVA Airways,Atlanta (ATL / KATL),Landed,Boeing 777-F,112776
+"01 Jan 17:03
+AKST",AS112,ASA112,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-9,63461
+"01 Jan 17:40
+AKST",CV4316,CLX4316,Cargolux Airlines International,Hong Kong (HKG / VHHH),Landed,Boeing 747-8R7F,61813
+"01 Jan 17:44
+AKST",FX5813,FDX5813,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,Boeing 777-FS2,112517
+"01 Jan 17:56
+AKST",N8802,NCR802,National Airlines,Columbus (LCK / KLCK),Landed,Boeing 747-412SF,83256
+"01 Jan 18:15
+AKST",BR621,EVA621,EVA Airways,Atlanta (ATL / KATL),Landed,Unknown,0
+"01 Jan 18:18
+AKST",AS50,ASA50,Alaska Airlines,Barrow (BRW / PABR),Landed,Boeing 737-890,37484
+"01 Jan 18:21
+AKST",AS118,ASA118,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-990ER,63461
+"01 Jan 18:38
+AKST",CZ497,CSN497,China Southern Airlines,Shanghai (PVG / ZSPD),Diverted,Boeing 777-F,68168
+"01 Jan 19:00
+AKST",7H7005,RVF7005,Ravn Alaska,Dillingham (DLG / PADL),Landed,De Havilland Canada DHC-8-102A Dash 8,31087
+"01 Jan 19:00
+AKST",7H9,RVF009,Ravn Alaska,Unalaska (DUT / PADU),Landed,De Havilland Canada DHC-8-102 Dash 8,32739
+"01 Jan 19:10
+AKST",KZ167,NCA167,Nippon Cargo Airlines,Chicago (ORD / KORD),Landed,Boeing 747-8KZF,86203
+"01 Jan 19:30
+AKST",CZ411,CSN411,China Southern Airlines,Shenzhen (SZX / ZGSZ),Diverted,B77L,73120
+"01 Jan 19:32
+AKST",D0992,PAC992,DHL Air,Shanghai (PVG / ZSPD),Landed,Embraer 170-200STD-175STD,32500
+"01 Jan 19:38
+AKST",5X77,UPS77,United Parcel Service (UPS),Shenzhen (SZX / ZGSZ),Landed,Boeing 747-8F,61421
+"01 Jan 19:38
+AKST",UA280,UAL280,United Airlines,Denver (DEN / KDEN),Landed,Boeing 737-8,60952
+"01 Jan 19:44
+AKST",AS134,ASA134,Alaska Airlines,Fairbanks (FAI / PAFA),Landed,Boeing 737-890,43502
+"01 Jan 20:09
+AKST",FX6021,FDX6021,Federal Express (FedEx),Memphis (MEM / KMEM),Landed,McDonnell Douglas MD-11F,99015
+"01 Jan 20:26
+AKST",AS107,ASA107,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-990,63461
+"01 Jan 20:32
+AKST",5X99,UPS99,United Parcel Service (UPS),Seoul (ICN / RKSI),Landed,Boeing 747-44AF,51296
+"01 Jan 20:34
+AKST",5X63,UPS63,United Parcel Service (UPS),Hong Kong (HKG / VHHH),Landed,Boeing 747-8U,61813
+"01 Jan 20:37
+AKST",KO68,AER68,Alaska Central Express,St. Paul Island (SNP / PASN),Landed,Beech 1900C-1,27540
+"01 Jan 20:40
+AKST",KO964,AER964,Alaska Central Express,Unalaska (DUT / PADU),Landed,Beech 1900C,29465
+"01 Jan 20:42
+AKST",DL2658,DAL2658,Delta Air Lines,Seattle (SEA / KSEA),Landed,Airbus A321-211,51562
+"01 Jan 21:10
+AKST",AS46,ASA46,Alaska Airlines,Bethel (BET / PABE),Landed,Boeing 737-890,44756
+"01 Jan 21:38
+AKST",K4813,CKS813,Kalitta Air,Zhengzhou (CGO / ZHCC),Landed,Boeing 747-4B5F,47248
+"01 Jan 22:05
+AKST",KE259,KAL259,Korean Air Lines,Shanghai (PVG / ZSPD),Landed,Boeing 747-8B5F,57261
+"01 Jan 22:06
+AKST",AS157,ASA157,Alaska Airlines,Phoenix (PHX / KPHX),Landed,Boeing 737-790,71077
+"01 Jan 22:07
+AKST",N8687,NCR687,National Airlines,New York (JFK / KJFK),Landed,Boeing 747-412SF,79853
+"01 Jan 22:10
+AKST",AS776,ASA776,Alaska Airlines,Las Vegas (LAS / KLAS),Landed,Boeing 737-990,73566
+"01 Jan 22:15
+AKST",AS115,ASA115,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-9,63461
+"01 Jan 22:28
+AKST",K4918,CKS918,Kalitta Air,Oscoda (OSC / KOSC),Landed,Boeing 747-4B5F,78441
+"01 Jan 22:29
+AKST",AS2554,QXE2554,Alaska Airlines,Fairbanks (FAI / PAFA),Landed,Embraer 170-200LR-175LR,31902
+"01 Jan 22:30
+AKST",CZ437,CSN437,China Southern Airlines,Shanghai (PVG / ZSPD),Diverted,B77L,68168
+"01 Jan 22:43
+AKST",UA586,UAL586,United Airlines,Denver (DEN / KDEN),Landed,Boeing 737-824,67918
+"01 Jan 22:44
+AKST",AS67,ASA67,Alaska Airlines,Juneau (JNU / PAJN),Landed,Boeing 737-900WL,51904
+"01 Jan 22:50
+AKST",Y87455,YZR7455,Suparna Airlines,Shanghai (PVG / ZSPD),Landed,Unknown,0
+"01 Jan 22:58
+AKST",CC606,ABD606,Air Atlanta Icelandic,Chicago (RFD / KRFD),Landed,Boeing 747-428,77340
+"01 Jan 23:15
+AKST",AS167,ASA167,Alaska Airlines,Seattle (SEA / KSEA),Landed,Boeing 737-900,61874
+"01 Jan 23:15
+AKST",BR636,EVA636,EVA Airways,Taipei (TPE / RCTP),Landed,Boeing 777-F,74909
+"01 Jan 23:17
+AKST",K4652,CKS652,Kalitta Air,Hong Kong (HKG / VHHH),Landed,Boeing 747-446SF,58869
+"01 Jan 23:38
+AKST",KO69,AER69,Alaska Central Express,St. Paul Island (SNP / PASN),Landed,Beech 1900C-1,27540
+"01 Jan 23:38
+AKST",FX5986,FDX5986,Federal Express (FedEx),Hong Kong (HKG / VHHH),Landed,Boeing 777-FS2,73587
