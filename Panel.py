@@ -10,11 +10,13 @@ def download_file_from_github(repo, path, save_as):
     url = f"https://github.com/LChelkowski/CO2-Emissions-Tracker-Ted-Stevens-Anchorage-International-Airport/tree/master/data"
     response = requests.get(url)
     if response.status_code == 200:
+        os.makedirs(os.path.dirname(save_as), exist_ok=True)
         with open(save_as, 'wb') as f:
             f.write(response.content)
         print(f"Downloaded {save_as} from GitHub")
     else:
         print(f"Failed to download {path} from GitHub: {response.status_code}")
+
 
 
 # Initialize Panel extension
@@ -98,13 +100,14 @@ body {
 """)
 
 # Directory where data is stored
-data_directory = 'C:/Users/lache/Desktop/Cornell/2024 Summer Internship/SAFs at Anchorage/data'
+data_directory = 'data'
+
 
 # Load pickle files function with row limit and unique indexing
 def load_pickle_files_dask(date_range_list, row_limit=None):
     df_list = []
     total_rows = 0
-    repo = "https://github.com/LChelkowski/CO2-Emissions-Tracker-Ted-Stevens-Anchorage-International-Airport"
+    repo = "LChelkowski/CO2-Emissions-Tracker-Ted-Stevens-Anchorage-International-Airport"
     for date in date_range_list:
         combined_file = os.path.join(data_directory, f"{date}", f"{date}_combined.pkl")
         if not os.path.exists(combined_file):
@@ -127,6 +130,7 @@ def load_pickle_files_dask(date_range_list, row_limit=None):
         return dd.from_pandas(combined_df, npartitions=4)  # Convert to Dask DataFrame
     else:
         return None
+
 
 
 # CO2 emission reduction based on SAF percentage
